@@ -1,3 +1,10 @@
+/**
+ * 
+ * @param {string} limit number of element return by the request
+ * @return list of recently played tracks
+ */
+const getUserRecentlyPlayed = async (limit) => {
+}
 
 /**
  * Get top artists spotify list of a user
@@ -24,4 +31,5 @@ const getUserTopTracks = async (timeRange, limit) => {
 export {
     getUserTopArtists,
     getUserTopTracks,
+    getUserRecentlyPlayed
 }
