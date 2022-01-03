@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function getHashParams() {
     var hashParams = {};
@@ -11,6 +11,15 @@ function getHashParams() {
 }
 
 function App() {
+
+    useEffect(() => {
+        const params = getHashParams()
+        if (params.access_token) {
+            console.log("params: ", params.access_token);
+            localStorage.setItem("accessToken", params.access_token);
+        }
+    })
+
     return (
         <div>
             Hello from the App
