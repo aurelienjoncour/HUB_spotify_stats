@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 
+import AppRouter from './Components/AppRouter';
+import Header from './Components/Header'
+
 function getHashParams() {
     var hashParams = {};
     var e, r = /([^&;=]+)=?([^&;]*)/g,
@@ -22,7 +25,8 @@ function App() {
 
     return (
         <div>
-            Hello from the App
+            <Header />
+            <AppRouter />
         </div>
     );
 }
