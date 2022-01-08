@@ -8,7 +8,7 @@
 
 ## 1. Lancement du projet
 
-```
+```shell
 $> npm install && npm start
 ```
 
